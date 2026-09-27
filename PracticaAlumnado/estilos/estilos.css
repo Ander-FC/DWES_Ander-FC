@@ -1,0 +1,109 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	max-width: 1000px;
+	margin: 30px auto;
+	padding: 0 20px;
+	background: #fff;
+	color: #222;
+	font-family: Arial, sans-serif;
+}
+h1,
+h2 {
+	color: #263746;
+}
+.formulario {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 14px 20px;
+	max-width: 850px;
+	margin-bottom: 28px;
+	padding: 16px;
+	border: 1px solid #ccc;
+	background: #fff;
+}
+.campo {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+label {
+	font-weight: bold;
+}
+input,
+select {
+	width: 100%;
+	min-height: 38px;
+	padding: 7px;
+	border: 1px solid #999;
+	background: #fff;
+	font: inherit;
+}
+.campo p {
+	margin: 0;
+	color: #555;
+	font-size: 0.85rem;
+}
+.botones {
+	display: flex;
+	align-items: center;
+	gap: 14px;
+	grid-column: 1 / -1;
+}
+button {
+	padding: 8px 12px;
+	border: 1px solid #315b7a;
+	background: #315b7a;
+	color: #fff;
+	font: inherit;
+	cursor: pointer;
+}
+a {
+	color: #244f70;
+}
+.conteos {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ccc;
+}
+.mensaje {
+	padding: 10px;
+	border: 1px solid #ccc;
+	background: #f5f5f5;
+}
+.tabla-contenedor {
+	overflow-x: auto;
+}
+table {
+	width: 100%;
+	border-collapse: collapse;
+	background: #fff;
+}
+th,
+td {
+	padding: 9px;
+	border: 1px solid #ccc;
+	text-align: left;
+}
+th {
+	background: #f1f1f1;
+}
+.acciones {
+	white-space: nowrap;
+}
+.acciones form {
+	display: inline;
+	margin-left: 8px;
+}
+@media (max-width: 600px) {
+	body {
+		padding: 0 12px;
+	}
+	.formulario {
+		grid-template-columns: 1fr;
+	}
+	.botones {
+		grid-column: 1;
+	}
+}
